@@ -86,7 +86,7 @@ public class Client {
 
              //***************  
     public String getAdresse() {
-        return nomEnseigne.get();
+        return adresse.get();
     }
 
     public void setAdresse(String adresse) {

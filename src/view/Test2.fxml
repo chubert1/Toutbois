@@ -31,9 +31,9 @@
                                     <Font size="14.0" />
                                  </font></Label>
                               <Separator layoutX="12.0" layoutY="35.0" prefHeight="10.0" prefWidth="370.0" />
-                              <SplitPane dividerPositions="0.7858508604206501" layoutY="45.0" orientation="VERTICAL" prefHeight="577.0" prefWidth="420.0">
+                              <SplitPane dividerPositions="0.7130434782608696" layoutY="45.0" orientation="VERTICAL" prefHeight="577.0" prefWidth="420.0">
                                 <items>
-                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="403.0" prefWidth="398.0">
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="459.0" prefWidth="418.0">
                                        <children>
                                           <GridPane layoutX="-2.0" prefHeight="410.0" prefWidth="400.0">
                                             <columnConstraints>
@@ -53,19 +53,18 @@
                                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                             </rowConstraints>
                                              <children>
-                                                <Label prefHeight="17.0" prefWidth="202.0" text=" N° client" />
-                                                <Label prefHeight="17.0" prefWidth="242.0" text=" Enseigne" GridPane.rowIndex="1" />
-                                                <Label prefHeight="17.0" prefWidth="204.0" text=" Adresse mail" GridPane.rowIndex="3" />
-                                                <Label prefHeight="17.0" prefWidth="200.0" text=" Téléphone" GridPane.rowIndex="4" />
-                                                <Label prefHeight="17.0" prefWidth="206.0" text=" Adresse" GridPane.rowIndex="5" />
-                                                <Label prefHeight="17.0" prefWidth="198.0" text=" Code postal" GridPane.rowIndex="7" />
-                                                <Label prefHeight="17.0" prefWidth="201.0" text=" Ville" GridPane.rowIndex="8" />
-                                                <Label prefHeight="17.0" prefWidth="200.0" text=" Pays" GridPane.rowIndex="9" />
-                                                <Label prefHeight="17.0" prefWidth="199.0" text=" Suivi par" GridPane.rowIndex="11" />
-                                                <Label prefHeight="17.0" prefWidth="208.0" text=" Nbre de commande" GridPane.rowIndex="12" />
+                                                <Label prefHeight="17.0" prefWidth="202.0" text="   N° client" />
+                                                <Label prefHeight="17.0" prefWidth="242.0" text="   Enseigne" GridPane.rowIndex="1" />
+                                                <Label prefHeight="17.0" prefWidth="204.0" text="   Adresse mail" GridPane.rowIndex="3" />
+                                                <Label prefHeight="17.0" prefWidth="200.0" text="   Téléphone" GridPane.rowIndex="4" />
+                                                <Label prefHeight="17.0" prefWidth="206.0" text="   Adresse" GridPane.rowIndex="5" />
+                                                <Label prefHeight="17.0" prefWidth="198.0" text="   Code postal" GridPane.rowIndex="7" />
+                                                <Label prefHeight="17.0" prefWidth="201.0" text="   Ville" GridPane.rowIndex="8" />
+                                                <Label prefHeight="17.0" prefWidth="200.0" text="   Pays" GridPane.rowIndex="9" />
+                                                <Label prefHeight="17.0" prefWidth="199.0" text="   Suivi par" GridPane.rowIndex="10" />
+                                                <Label prefHeight="17.0" prefWidth="208.0" text="   Nbre de commande" GridPane.rowIndex="11" />
                                                 <Label fx:id="idClientLabel" prefHeight="17.0" prefWidth="203.0" text="Label" GridPane.columnIndex="1" />
                                                 <Label fx:id="enseigneLabel" prefHeight="17.0" prefWidth="199.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                                                 <Label fx:id="siretLabel" prefHeight="17.0" prefWidth="201.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
@@ -76,16 +75,16 @@
                                                 <Label fx:id="codePostalLabel" prefHeight="17.0" prefWidth="206.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
                                                 <Label fx:id="villeLabel" prefHeight="17.0" prefWidth="200.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="8" />
                                                 <Label fx:id="paysLabel" prefHeight="17.0" prefWidth="202.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-                                                <Label fx:id="suiviLabel" prefHeight="17.0" prefWidth="199.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="11" />
-                                                <Label fx:id="nbCommandeLabel" prefHeight="17.0" prefWidth="202.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="12" />
-                                                <Label prefHeight="17.0" prefWidth="205.0" text=" Siret" GridPane.rowIndex="2" />
+                                                <Label fx:id="suiviLabel" prefHeight="17.0" prefWidth="199.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                                <Label fx:id="nbCommandeLabel" prefHeight="17.0" prefWidth="202.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                                <Label prefHeight="17.0" prefWidth="205.0" text="   Siret" GridPane.rowIndex="2" />
                                              </children>
                                           </GridPane>
                                        </children>
                                     </AnchorPane>
-                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="398.0">
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="142.0" prefWidth="418.0">
                                        <children>
-                                          <TableView fx:id="clientTable" layoutX="-2.0" layoutY="-3.0" prefHeight="75.0" prefWidth="400.0">
+                                          <TableView fx:id="clientTable" layoutX="-2.0" layoutY="-5.0" prefHeight="125.0" prefWidth="420.0">
                                             <columns>
                                               <TableColumn fx:id="nomEnseigneColumn" prefWidth="193.0" text="Enseigne" />
                                               <TableColumn fx:id="idClientColumn" prefWidth="206.0" text="N°" />
@@ -133,16 +132,16 @@
                                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                             </rowConstraints>
                                              <children>
-                                                <Label prefHeight="17.0" prefWidth="204.0" text="  N° Prospect" />
-                                                <Label prefHeight="17.0" prefWidth="198.0" text="  Enseigne" GridPane.rowIndex="1" />
-                                                <Label prefHeight="17.0" prefWidth="199.0" text="  Siret" GridPane.rowIndex="2" />
-                                                <Label prefHeight="17.0" prefWidth="204.0" text="  Adresse mail" GridPane.rowIndex="3" />
-                                                <Label prefHeight="17.0" prefWidth="200.0" text="  Téléphone" GridPane.rowIndex="4" />
-                                                <Label prefHeight="17.0" prefWidth="205.0" text="  Adresse" GridPane.rowIndex="5" />
-                                                <Label prefHeight="17.0" prefWidth="209.0" text="  Code postal" GridPane.rowIndex="7" />
-                                                <Label prefHeight="17.0" prefWidth="201.0" text="  Ville" GridPane.rowIndex="8" />
-                                                <Label prefHeight="17.0" prefWidth="206.0" text="  Pays" GridPane.rowIndex="9" />
-                                                <Label prefHeight="17.0" prefWidth="213.0" text="  Dernière visite" GridPane.rowIndex="12" />
+                                                <Label prefHeight="17.0" prefWidth="204.0" text="   N° Prospect" />
+                                                <Label prefHeight="17.0" prefWidth="198.0" text="   Enseigne" GridPane.rowIndex="1" />
+                                                <Label prefHeight="17.0" prefWidth="199.0" text="   Siret" GridPane.rowIndex="2" />
+                                                <Label prefHeight="17.0" prefWidth="204.0" text="   Adresse mail" GridPane.rowIndex="3" />
+                                                <Label prefHeight="17.0" prefWidth="200.0" text="   Téléphone" GridPane.rowIndex="4" />
+                                                <Label prefHeight="17.0" prefWidth="205.0" text="   Adresse" GridPane.rowIndex="5" />
+                                                <Label prefHeight="17.0" prefWidth="209.0" text="   Code postal" GridPane.rowIndex="7" />
+                                                <Label prefHeight="17.0" prefWidth="201.0" text="   Ville" GridPane.rowIndex="8" />
+                                                <Label prefHeight="17.0" prefWidth="206.0" text="   Pays" GridPane.rowIndex="9" />
+                                                <Label prefHeight="17.0" prefWidth="213.0" text="   Dernière visite" GridPane.rowIndex="12" />
                                                 <Label prefHeight="17.0" prefWidth="207.0" text="Label" GridPane.columnIndex="1" />
                                                 <Label prefHeight="17.0" prefWidth="201.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                                                 <Label prefHeight="17.0" prefWidth="201.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
@@ -232,7 +231,7 @@
             </TabPane>
          </center>
          <bottom>
-            <ButtonBar prefHeight="45.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <ButtonBar prefHeight="37.0" prefWidth="420.0" BorderPane.alignment="CENTER">
               <buttons>
                   <Button alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" text="Editer" textOverrun="WORD_ELLIPSIS" />
                 <Button alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" text="Ajouter" />
